@@ -1,85 +1,56 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 1rem;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 1.8rem;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 1rem;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-}
-
-.card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: white;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.about-me,
-.toronto-section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.profile-img,
-.toronto-section img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-}
-
-.resources ul {
-    list-style: circle inside;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jubel Dela Cruz - Personal portfolio and web development resources.">
+    <meta name="author" content="Jubel Dela Cruz">
+    <title>WDD131: Dynamic Web Fundamentals - Jubel Dela Cruz</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD131: Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Canvas</a></li>
+                <li><a href="#">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card about-me">
+            <img class="profile-img" src="https://i.ibb.co/fpq46PB/profile.jpg" alt="Profile">
+            <div>
+                <h2>About Me</h2>
+                <p>My name is Jubel Dela Cruz, I was born in Quezon City, Philippines, and I live in Toronto, Canada. I work as a Digital Marketing Manager at a Forklift Manufacturing company.</p>
+            </div>
+        </section>
+        <section class="card toronto-section">
+            <img src="https://i.ibb.co/SsqMsrM/toronto.jpg" alt="Toronto Skyline">
+            <div>
+                <h2>Toronto, Canada</h2>
+                <p>Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower.</p>
+            </div>
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li>Dev.to Community</li>
+                <li>Smashing Magazine</li>
+                <li>CSS Tricks</li>
+                <li>W3 Schools</li>
+                <li>Udemy</li>
+                <li>Image Placeholder</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©2025 ⭐ Jubel Dela Cruz ⭐ Canada</p>
+        <p id="lastModified">Last modification:</p>
+    </footer>
+</body>
+</html>
