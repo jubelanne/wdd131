@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
@@ -22,6 +23,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
 }
 
@@ -49,6 +51,8 @@ nav ul li a:hover {
 main {
     max-width: 1200px;
     margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
@@ -57,22 +61,60 @@ main {
     background-color: white;
     padding: 1.5rem;
     margin-bottom: 2rem;
+    flex: 1;
 }
 
-.about-me, .toronto-section {
+.card h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Flexbox layout for main content */
+.container {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-.profile-img, .toronto-section img {
+/* Section Header Styling */
+.section-header {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-me,
+.toronto-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profile-img,
+.toronto-section img {
     width: 100%;
     max-width: 300px;
     border-radius: 8px;
 }
 
-.resources ul {
-    list-style: circle inside;
+/* Web Dev Resources Section */
+.web-dev-resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.web-dev-resources ul li {
+    margin: 0.5rem 0;
+}
+
+.web-dev-resources ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.web-dev-resources ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */

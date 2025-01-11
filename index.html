@@ -3,54 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jubel Dela Cruz - Personal portfolio and web development resources.">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Jubel Dela Cruz">
     <meta name="author" content="Jubel Dela Cruz">
-    <title>WDD131: Dynamic Web Fundamentals - Jubel Dela Cruz</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jubel Dela Cruz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <header>
-        <h1>WDD131: Dynamic Web Fundamentals</h1>
-        <nav>
-            <ul>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Canvas</a></li>
-                <li><a href="#">Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="card about-me">
-            <img class="profile-img" src="https://i.ibb.co/fpq46PB/profile.jpg" alt="Profile">
-            <div>
+
+<header>
+    <h1>WDD131: Dynamic Web Fundamentals - Jubel Dela Cruz</h1>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/enos/1?lang=eng&id=p12#p12" target="_blank" rel="noopener noreferrer">Favorite Scripture</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Final Project</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <!-- Left Side: About Me -->
+        <div class="card about-me">
+            <div class="section-header">
                 <h2>About Me</h2>
-                <p>My name is Jubel Dela Cruz, I was born in Quezon City, Philippines, and I live in Toronto, Canada. I work as a Digital Marketing Manager at a Forklift Manufacturing company.</p>
             </div>
-        </section>
-        <section class="card toronto-section">
-            <img src="https://i.ibb.co/SsqMsrM/toronto.jpg" alt="Toronto Skyline">
-            <div>
+            <img class="profile-img" src="https://i.ibb.co/fpq46PB/profile.jpg" alt="Jubel Dela Cruz">
+            <p>My name is Jubel Dela Cruz, I was born in Quezon City, Philippines, and I live in Toronto, Canada. I work as a Digital Marketing Manager at a Forklift Manufacturing company.</p>
+        </div>
+
+        <!-- Right Side: Toronto Section -->
+        <div class="card toronto-section">
+            <div class="section-header">
                 <h2>Toronto, Canada</h2>
-                <p>Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower.</p>
             </div>
-        </section>
-        <section class="card resources">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li>Dev.to Community</li>
-                <li>Smashing Magazine</li>
-                <li>CSS Tricks</li>
-                <li>W3 Schools</li>
-                <li>Udemy</li>
-                <li>Image Placeholder</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>©2025 ⭐ Jubel Dela Cruz ⭐ Canada</p>
-        <p id="lastModified">Last modification:</p>
-    </footer>
+            <img src="https://i.ibb.co/SsqMsrM/toronto.jpg" alt="Toronto Skyline">
+            <p>Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower.</p>
+        </div>
+    </div>
+
+    <!-- Web Dev Resources Section -->
+    <div class="card web-dev-resources">
+        <h2>Web Dev Resources</h2>
+        <ul>
+            <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+            <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+            <li><a href="https://placehold.co/" target="_blank" rel="noopener noreferrer">Image Placeholder</a></li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>&#169; <span id="currentyear"></span> ⭐ Jubel Dela Cruz ⭐ Canada</p>
+    <p id="lastModified"></p>
+</footer>
+
 </body>
 </html>
