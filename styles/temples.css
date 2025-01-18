@@ -1,47 +1,143 @@
-/* Extend base.css with page-specific styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* General Styling */
-.album {
-    text-align: center;
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
     padding: 1rem;
 }
 
-.album h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-/* Grid Layout for Images */
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #444;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.hamburger {
+    display: none;
+    background-color: #444;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Album Styling */
+.album {
+    margin-top: 2rem;
+}
+
+.album h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 figure {
     border: 1px solid #ddd;
     border-radius: 8px;
-    background: white;
+    background-color: white;
     padding: 1rem;
     text-align: center;
 }
 
 figure img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     border-radius: 8px;
 }
 
 figcaption {
     margin-top: 0.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 2rem;
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Media Queries */
 @media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .grid {
         grid-template-columns: 1fr;
     }
