@@ -1,68 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Jubel Dela Cruz">
-    <meta name="author" content="Jubel Dela Cruz">
-    <title>WDD 131 - Dynamic Web Fundamentals - Jubel Dela Cruz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <script defer src="scripts/getdates.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Japan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-
-<header>
-    <h1>WDD131: Dynamic Web Fundamentals - Jubel Dela Cruz</h1>
-    <nav>
+  <header>
+    <h1>Explore Japan</h1>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="https://i.ibb.co/HVjYvVM/Japan-2107x1406.jpg" media="(min-width: 768px)">
+        <img src="https://i.ibb.co/HVjYvVM/Japan-2107x1406.jpg" alt="Beautiful scenery of Japan">
+      </picture>
+      <div class="info-box data">
+        <h2>Data</h2>
         <ul>
-            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/enos/1?lang=eng&id=p12#p12" target="_blank" rel="noopener noreferrer">Favorite Scripture</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Final Project</a></li>
+          <li>Area: 377,975 sq km</li>
+          <li>Population: 126 million</li>
+          <li>Capital: Tokyo</li>
+          <li>Languages: Japanese</li>
+          <li>Currency: Japanese Yen (JPY)</li>
+          <li>Time Zone: Japan Standard Time (UTC+9)</li>
+          <li>Calling Code: +81</li>
+          <li>Internet TLD: .jp</li>
         </ul>
-    </nav>
-</header>
-
-<main>
-    <div class="container">
-        <!-- Left Side: About Me -->
-        <div class="card about-me">
-            <div class="section-header">
-                <h2>About Me</h2>
-            </div>
-            <img class="profile-img" src="https://i.ibb.co/fpq46PB/profile.jpg" alt="Jubel Dela Cruz">
-            <p>My name is Jubel Dela Cruz, I was born in Quezon City, Philippines, and I live in Toronto, Canada. I work as a Digital Marketing Manager at a Forklift Manufacturing company.</p>
-        </div>
-
-        <!-- Right Side: Toronto Section -->
-        <div class="card toronto-section">
-            <div class="section-header">
-                <h2>Toronto, Canada</h2>
-            </div>
-            <img src="https://i.ibb.co/SsqMsrM/toronto.jpg" alt="Toronto Skyline">
-            <p>Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower.</p>
-        </div>
-    </div>
-
-    <!-- Web Dev Resources Section -->
-    <div class="card web-dev-resources">
-        <h2>Web Dev Resources</h2>
+      </div>
+      <div class="info-box weather">
+        <h2>Weather</h2>
         <ul>
-            <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
-            <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
-            <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
-            <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
-            <li><a href="https://placehold.co/" target="_blank" rel="noopener noreferrer">Image Placeholder</a></li>
+          <li>Temperature: <span id="temp">5°C</span></li>
+          <li>Conditions: Clear</li>
+          <li>Wind: <span id="wind-speed">15 km/h</span></li>
+          <li>Wind Chill: <span id="wind-chill">N/A</span></li>
         </ul>
-    </div>
-</main>
-
-<footer>
-    <p>&#169; <span id="currentyear"></span> ⭐ Jubel Dela Cruz ⭐ Canada</p>
-    <p id="lastModified"></p>
-</footer>
-
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="current-year"></span> | Last Updated: <span id="last-modified"></span></p>
+  </footer>
 </body>
 </html>
