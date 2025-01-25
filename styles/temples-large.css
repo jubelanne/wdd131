@@ -1,7 +1,15 @@
 nav ul {
-    display: flex; flex-direction: row; gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
-.album { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.album {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
-footer { display: flex; justify-content: space-between; padding: 1rem 2rem; }
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
