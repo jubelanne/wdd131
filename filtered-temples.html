@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album - WDD 131 Assignment">
+    <meta name="author" content="Jubel Dela Cruz">
+    <title>Temple Album</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button class="hamburger" aria-label="Toggle Menu">☰</button>
+            <ul>
+                <li><a href="#" id="filter-home">Home</a></li>
+                <li><a href="#" id="filter-old">Old</a></li>
+                <li><a href="#" id="filter-new">New</a></li>
+                <li><a href="#" id="filter-large">Large</a></li>
+                <li><a href="#" id="filter-small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Temple Album</h2>
+            <div id="templeGrid" class="grid">
+                <!-- Temples will be inserted here dynamically via JS -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&#169; <span id="currentyear"></span> ⭐ Jubel Dela Cruz ⭐ Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
