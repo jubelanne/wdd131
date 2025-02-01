@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FDFDFD;
+    color: #2C3E50;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2C3E50;
+}
+
+ul {
+    list-style-type: square;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+}
+
+/* Mobile Wireframe */
+.wireframe-container {
+    border: 2px dashed #2C3E50;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.wireframe-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2C3E50;
+}
+
+.header {
+    background-color: #E0E0E0;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    background-color: #D0D0D0;
+    height: 200px;
+    width: 20%;
+}
+
+.main-content {
+    background-color: #D0D0D0;
+    height: 200px;
+    width: 75%;
+}
+
+.footer {
+    background-color: #E0E0E0;
+    height: 50px;
+    width: 100%;
+}
+
+/* Mobile View */
+.wireframe-container.mobile {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Desktop View */
+.wireframe-container.desktop {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .wireframe-container.desktop .content {
+        flex-direction: row;
+    }
+}
