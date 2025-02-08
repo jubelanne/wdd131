@@ -3,66 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Jubel Dela Cruz">
-    <meta name="author" content="Jubel Dela Cruz">
-    <title>WDD 131 - Dynamic Web Fundamentals - Jubel Dela Cruz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <script defer src="scripts/getdates.js"></script>
+    <title>Solo Travel for Women</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
 
 <header>
-    <h1>WDD131: Dynamic Web Fundamentals - Jubel Dela Cruz</h1>
+    <h1>Travel for Solos</h1>
     <nav>
         <ul>
-            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/enos/1?lang=eng&id=p12#p12" target="_blank" rel="noopener noreferrer">Favorite Scripture</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Final Project</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <div class="container">
-        <!-- Left Side: About Me -->
-        <div class="card about-me">
-            <div class="section-header">
-                <h2>About Me</h2>
-            </div>
-            <img class="profile-img" src="https://i.ibb.co/fpq46PB/profile.jpg" alt="Jubel Dela Cruz">
-            <p>My name is Jubel Dela Cruz, I was born in Quezon City, Philippines, and I live in Toronto, Canada. I work as a Digital Marketing Manager at a Forklift Manufacturing company.</p>
-        </div>
-
-        <!-- Right Side: Toronto Section -->
-        <div class="card toronto-section">
-            <div class="section-header">
-                <h2>Toronto, Canada</h2>
-            </div>
-            <img src="https://i.ibb.co/SsqMsrM/toronto.jpg" alt="Toronto Skyline">
-            <p>Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower.</p>
-        </div>
+<!-- Hero Section -->
+<section class="hero">
+    <a href="https://ibb.co/fzyHs0JH">
+        <img src="https://i.ibb.co/YF1hxjgh/The-best-destinations-for-solo-female-travel-in-2024-National-Park-Surat-Thani-Thailand-Peera-Sathaw.jpg" alt="Solo Travel">
+    </a>
+    <div class="hero-text">
+        <h2>Discover Freedom</h2>
+        <a href="about.html" class="btn">Learn More</a>
     </div>
+</section>
 
-    <!-- Web Dev Resources Section -->
-    <div class="card web-dev-resources">
-        <h2>Web Dev Resources</h2>
-        <ul>
-            <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
-            <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
-            <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
-            <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
-            <li><a href="https://placehold.co/" target="_blank" rel="noopener noreferrer">Image Placeholder</a></li>
-        </ul>
+<!-- Destinations -->
+<section class="destinations">
+    <div class="destination">
+        <a href="https://ibb.co/5WBmHHs7">
+            <img src="https://i.ibb.co/5WBmHHs7/images.jpg" alt="Paris, France">
+        </a>
+        <h3>Paris, France</h3>
+        <p>Discover the beauty and safety of traveling to this amazing location.</p>
     </div>
-</main>
+    <div class="destination">
+        <a href="https://ibb.co/0jKycxPf">
+            <img src="https://i.ibb.co/Y7XB3xvt/BC3943-CA-CD85-4-A52-ABE496-DAB90-E33-B4.jpg" alt="Barcelona, Spain">
+        </a>
+        <h3>Barcelona, Spain</h3>
+        <p>Explore this vibrant city known for its welcoming environment.</p>
+    </div>
+    <div class="destination">
+        <a href="https://ibb.co/d0V7Wdy0">
+            <img src="https://i.ibb.co/SXMJshpX/i-Stock-1137863101.jpg" alt="Lisbon, Portugal">
+        </a>
+        <h3>Lisbon, Portugal</h3>
+        <p>One of the top choices for solo women travelers.</p>
+    </div>
+</section>
 
-<footer>
-    <p>&#169; <span id="currentyear"></span> ⭐ Jubel Dela Cruz ⭐ Canada</p>
-    <p id="lastModified"></p>
-</footer>
+<!-- Contact Form -->
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        
+        <button type="submit">Send</button>
+    </form>
+</section>
 
 </body>
 </html>

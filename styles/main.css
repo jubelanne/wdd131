@@ -1,0 +1,134 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #F39C12;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2C3E50;
+}
+
+/* Header styles */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #F39C12;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero .btn {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.1em;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    width: 300px;
+    font-size: 1em;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #F39C12;
+}
